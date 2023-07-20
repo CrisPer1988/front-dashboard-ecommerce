@@ -1,0 +1,27 @@
+.content__dashboard {
+    display: flex;
+    gap: 2rem; 
+}
+
+.card__dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    width: 200px;
+    border-radius: 10px;
+
+}
+
+.card__dashboard1 {
+    background-color: blue;
+}
+
+.card__dashboard2 {
+    background-color: green;
+}
+
+.card__dashboard3 {
+    background-color: red;
+}
