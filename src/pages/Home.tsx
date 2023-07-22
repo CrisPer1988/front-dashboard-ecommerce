@@ -1,10 +1,10 @@
 import { BrowserRouter } from "react-router-dom"
-import CreateProducts from "./components/CreateProducts"
+import CreateProducts from "./CreateProducts"
 import {Routes, Route, NavLink, Navigate} from "react-router-dom"
-import CreateCategory from "./components/CreateCategory"
-import Dashboard from "./components/Dashboard"
-import Purchases from "./components/Purchases"
-import UsersRegister from "./components/UsersRegister"
+import AllProducts from "./AllProducts"
+import Dashboard from "./Dashboard"
+import Purchases from "./Purchases"
+import UsersRegister from "./UsersRegister"
 
 
 const Home = () => {
@@ -25,7 +25,7 @@ const Home = () => {
         </ul>
         <ul>
           <li>
-            <NavLink className={({isActive}) => isActive ? "nav-active" : ""} to="/category">Crear categoria</NavLink>
+            <NavLink className={({isActive}) => isActive ? "nav-active" : ""} to="/category">Mis Productos</NavLink>
           </li>
         </ul>
         <ul>
@@ -41,7 +41,7 @@ const Home = () => {
       </nav>
       <Routes>
                 <Route path="products" element={<CreateProducts />}/>
-                <Route path="category" element={<CreateCategory />}/>
+                <Route path="category" element={<AllProducts />}/>
                 <Route path="purchases" element={<Purchases />}/>
                 <Route path="users" element={<UsersRegister />}/>
                 <Route path="home" element={<Dashboard />}/>

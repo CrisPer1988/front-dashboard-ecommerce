@@ -1,8 +1,8 @@
 import { useEffect } from "react"
 import "./styles/dashboard.css"
-import { getUsersThunk } from "../../store/slices/users.slice"
+import { getUsersThunk } from "../store/slices/users.slice"
 import { useDispatch, useSelector } from "react-redux"
-import { getProductsThunk } from "../../store/slices/products.slice"
+import { getProductsThunk } from "../store/slices/products.slice"
 
 const Dashboard = () => {
   const {users} = useSelector((state:any) => state)
